@@ -1,11 +1,13 @@
 package main
 
-import "fmt"
-import "os"
-import "log"
-import "bufio"
-import "strings"
-import "strconv"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func isReportSafe(report []int) bool {
 	checkDecreasing := report[1] < report[0]
